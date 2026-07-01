@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Medical Report</title>
+
+    <link rel="stylesheet" href="../css/upload.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Upload Medical Report</h1>
+
+        <div class="upload-box">
+
+            <i class="fa-solid fa-file-medical"></i>
+
+            <h2>Upload Your PDF Report</h2>
+
+            <p>Select your medical report in PDF format</p>
+
+            <input type="file" id="pdfFile" accept=".pdf" hidden>
+
+            <button id="browseBtn">Browse PDF</button>
+
+            <p id="fileName">No File Selected</p>
+
+            <button id="analyzeBtn">Analyze Report</button>
+
+        </div>
+
+    </div>
+
+    <!-- PDF.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+    <script>
+        pdfjsLib.GlobalWorkerOptions.workerSrc =
+            "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+    </script>
+
+    <script src="../js/pdfReader.js"></script>
+
+    <script src="../js/upload.js"></script>
+
+</body>
+
+</html>

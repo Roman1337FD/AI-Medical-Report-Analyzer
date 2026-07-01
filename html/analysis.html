@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Medical Report Analysis</title>
+
+    <link rel="stylesheet" href="../css/analysis.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="top-bar">
+            <h1>
+                <i class="fa-solid fa-heart-pulse"></i>
+                AI Medical Report Analysis
+            </h1>
+        </div>
+
+        <div class="card">
+
+            <div id="result">
+
+                <h2>🤖 AI is analyzing your report...</h2>
+
+            </div>
+
+        </div>
+
+        <div class="btn-group">
+
+            <button id="downloadBtn">
+                <i class="fa-solid fa-download"></i>
+                Download PDF
+            </button>
+
+            <button id="historyBtn">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                History
+            </button>
+
+            <button id="chatBtn">
+                <i class="fa-solid fa-comments"></i>
+                Chat With AI
+            </button>
+
+            <button id="newReportBtn">
+                <i class="fa-solid fa-file-medical"></i>
+                New Report
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- jsPDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <!-- html2canvas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <!-- Project JS -->
+    <script src="../js/config.js"></script>
+    <script src="../js/storage.js"></script>
+    <script src="../js/ai.js"></script>
+    <script src="../js/analysis.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:#eef5ff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:30px;
+
+}
+
+.container{
+
+    width:100%;
+    max-width:700px;
+
+}
+
+.profile-card{
+
+    background:#fff;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 10px 35px rgba(0,0,0,.1);
+
+}
+
+.profile-header{
+
+    text-align:center;
+    margin-bottom:35px;
+
+}
+
+.avatar{
+
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #2563eb;
+    margin-bottom:15px;
+
+}
+
+.profile-header h1{
+
+    color:#2563eb;
+    font-size:34px;
+
+}
+
+.profile-info{
+
+    display:grid;
+    gap:20px;
+
+}
+
+.info-box{
+
+    display:flex;
+    align-items:center;
+    gap:20px;
+    background:#f7faff;
+    padding:18px 22px;
+    border-radius:15px;
+    border-left:5px solid #2563eb;
+
+}
+
+.info-box i{
+
+    font-size:28px;
+    color:#2563eb;
+    width:35px;
+
+}
+
+.info-box label{
+
+    display:block;
+    color:#777;
+    font-size:14px;
+
+}
+
+.info-box p{
+
+    font-size:18px;
+    font-weight:600;
+    color:#222;
+
+}
+
+.buttons{
+
+    margin-top:35px;
+    display:flex;
+    gap:15px;
+    justify-content:center;
+    flex-wrap:wrap;
+
+}
+
+.buttons button{
+
+    border:none;
+    background:#2563eb;
+    color:#fff;
+    padding:14px 25px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+
+}
+
+.buttons button:hover{
+
+    background:#1d4ed8;
+    transform:translateY(-3px);
+
+}
+
+@media(max-width:600px){
+
+.profile-card{
+
+padding:25px;
+
+}
+
+.profile-header h1{
+
+font-size:28px;
+
+}
+
+.buttons{
+
+flex-direction:column;
+
+}
+
+.buttons button{
+
+width:100%;
+
+}
+
+}
