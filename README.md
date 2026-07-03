@@ -1,6 +1,6 @@
 # 🏥 MedAI - AI Medical Report Analyzer
 
-MedAI is a web application built using **HTML, CSS, and Vanilla JavaScript**. It uses the **Google Gemini API** to analyze medical reports and provide easy-to-understand health insights.
+MedAI is a web application built using **HTML, CSS, and Vanilla JavaScript**. It uses the **Google Gemini API** to analyze medical reports and provide easy-to-understand health insights .
 
 ## Features
 - User Login & Register
